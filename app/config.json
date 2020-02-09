@@ -1,0 +1,14 @@
+{
+	"discord_channel_id": "",
+	"printToConsole":"true",
+	"sendKey":"true",
+	"programName":"",
+	"os": "win",
+	"throttledCommands": [],
+	"filteredCommands": [],
+	"commands": ["left", "right", "up", "down",
+		"start", "select",
+		"a", "b",
+		"democracy", "anarchy"
+	]
+}
