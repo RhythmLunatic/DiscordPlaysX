@@ -1,10 +1,10 @@
-# Twitch Plays X
+# Discord Plays X
 
 (inspired by [TwitchPlaysPokemon])
 
 Lets you use IRC to send inputs to a program and stream it, TwitchPlaysPokemon style.
 
-Tested on Windows 8, Ubuntu 13.10. Should work on a Mac as well - just change the [config](/app/config.js) file.
+Tested on Windows 8.1, Ubuntu 13.10. Should work on a Mac as well - just change the [config](/app/config.js) file.
 
 > on Windows, the program has to be focused in order to send keyboard inputs so you won't be able to use your computer at the same time unless you run the program in a virtual machine.
 
@@ -47,7 +47,7 @@ apt-get install xdotool
 - Install node packages from command line `npm install` in folder (irc, printf)
 - Install [python] - http://www.python.org/download/releases/2.7.6/
     - make sure python is on your PATH
-- Install [python win32] package - http://sourceforge.net/projects/pywin32/files/pywin32/
+- Install [python win32] package - https://github.com/mhammond/pywin32
 
 Setup
 --------------

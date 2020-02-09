@@ -1,5 +1,8 @@
-var exec = require('child_process').exec,
-config = require('./config.js'),
+const config = require('./config.json');
+var spawn = require('child_process').spawn,
+//To be removed eventually
+exec = require('child_process').exec,
+currentPath = process.cwd(),
 lastTime = {},
 windowID = 'unfilled',
 throttledCommands = config.throttledCommands,
@@ -49,7 +52,17 @@ function sendKey(command) {
                 //use python on windows
                 // "VisualBoyAdvance"
                 // "DeSmuME 0.9.10 x64"
-                exec('key.py' + '  ' + config.programName + ' ' + key);
+				//console.log('python3 key.py' + ' "' + config.programName + '" ' + key)
+                exec('python3 "'+currentPath+'\\app\\key.py" "' + config.programName + '" ' + key, function(error,stdout,stderr) {
+					console.log(error);
+					console.log(stdout);
+					console.log(stderr);
+				});
+				/*var ret = spawn("python3",["key.py",config.programName,key])
+				ret.stdout.on('data', function (data) {
+				  console.log('stdout: ' + data.toString());
+				});*/
+
             }
         }
     }

@@ -1,10 +1,9 @@
 {
-  "name": "TwitchPlaysX",
-  "description": "Lets you use IRC to send inputs to a program and stream it, TwitchPlaysPokemon style",
+  "name": "DiscordPlaysX",
+  "description": "Lets you use Discord to send inputs to a program and stream it, TwitchPlaysPokemon style (originally by hzoo)",
   "version": "0.0.1",
   "dependencies": {
-    "irc": "martynsmith/node-irc#605555e3dfe5eb92070f4520a22cedfbebd4dca8",
-    "nconf": "^0.7.1",
+    "discord.js": "^11.3.2",
     "printf": "~0.2.1"
   },
   "scripts": {
@@ -13,5 +12,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/hzoo/TwitchPlaysX.git"
-  }
+  },
+  "author": "RhythmLunatic (originally written by hzoo)"
 }

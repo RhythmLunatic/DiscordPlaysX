@@ -5,7 +5,7 @@ import win32con
 import win32ui
 import time,sys
 
-keyDelay = 0.1
+keyDelay = .1
 keymap = {
     "Up": win32con.VK_UP,
     "Left": win32con.VK_LEFT,
@@ -25,7 +25,9 @@ def sendKey(button):
     win32api.keybd_event(keymap[button], 0, win32con.KEYEVENTF_KEYUP, 0)
 
 if __name__ == "__main__":
+    print(" ".join(sys.argv))
     win = win32ui.FindWindow(None, sys.argv[1])
     win.SetForegroundWindow()
     win.SetFocus()
     sendKey(sys.argv[2])
+    print("success")
